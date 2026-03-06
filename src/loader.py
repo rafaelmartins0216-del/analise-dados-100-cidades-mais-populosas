@@ -3,7 +3,7 @@ import pandas as pd
 
 #Vamos utilizar essa função (le todos os formatos possíveis)
 #Já transfroma em Data Frame
-def carregar_arquivo(caminho: str=r'data\Top 100 Worlds Largest Cities.csv'):
+def carregar_arquivo(caminho: str):
     ext = str(caminho.split(".")[-1])
 
     if ext == "csv":

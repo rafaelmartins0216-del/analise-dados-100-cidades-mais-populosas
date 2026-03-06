@@ -5,7 +5,7 @@ A aplicação permite carregar uma planilha com os dados das cidades, calcular a
 
 O objetivo do projeto é praticar manipulação de dados com Pandas, visualização com Matplotlib e organização de código em módulos Python.
 
-O Projeto é feito para o sistema Operacional Windows 
+
 
 🚀 Funcionalidades
 
@@ -71,6 +71,10 @@ Ativando ambiente virtual:
 Windows
 
     venv\Scripts\activate
+
+Linux/Mac
+
+    source venv/bin/activate
 
 ```
 

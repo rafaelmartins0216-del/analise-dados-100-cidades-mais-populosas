@@ -1,3 +1,4 @@
+import os
 from src.loader import carregar_arquivo
 from src.analise import (
     resumo,
@@ -83,7 +84,11 @@ def main():
 
         if op == "1":
             try:
-                caminho = r"data\Top 100 Worlds Largest Cities.csv"
+                if os.name == "nt":  # Windows
+                    caminho = "data\\Top 100 Worlds Largest Cities.csv"
+                else:  # Linux / Mac
+                    caminho = "data/Top 100 Worlds Largest Cities.csv"
+
                 df = carregar_arquivo(caminho)
                 print("Arquivo carregado com sucesso!")
                 df = renomear_colunas_pt_br(df)
