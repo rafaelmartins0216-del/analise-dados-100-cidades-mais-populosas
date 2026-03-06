@@ -3,7 +3,7 @@ from src.analise import resumo, renomear_colunas_pt_br, grafico_habitantes ,dens
 
 def menu():
     print("\n=== MENU INICIAL ===")
-    print("1 - Enviar Arquivo")
+    print("1 - Começar Analise")
     print("2 - Sair")
 
 def menu_analise():
@@ -69,7 +69,7 @@ def main():
 
         if op == "1":
             try:
-                caminho = input("Digite o caminho da planilha: ").strip()
+                caminho=r"data\Top 100 Worlds Largest Cities.csv"
                 df = carregar_arquivo(caminho)
                 print("Arquivo carregado com sucesso!")
                 df=renomear_colunas_pt_br(df)
