@@ -21,7 +21,9 @@ Ranking das cidades mais densas
 
 Comparação de densidade populacional
 
+
 🗂 Estrutura do Projeto
+```bash
 analise-dados-100-cidades-mais-populosas
 │
 ├── data/
@@ -35,49 +37,61 @@ analise-dados-100-cidades-mais-populosas
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
+
 🛠 Tecnologias Utilizadas
 
+```bash
 Python
-
 Pandas
-
 Matplotlib
-
-Openpyxl
+```
 
 ⚙️ Como Executar o Projeto
 1️⃣ Clonar o repositório
+```bash
 git clone https://github.com/seu-usuario/analise-dados-100-cidades-mais-populosas.git
+```
+
 2️⃣ Entrar na pasta do projeto
+```bash
 cd analise-dados-100-cidades-mais-populosas
+```
+
+
 3️⃣ Criar ambiente virtual (opcional)
+```bash
 python -m venv venv
+```
 
-Ativar:
-
+Ativando ambiente virtual:
+```bash
 Windows
 
-venv\Scripts\activate
+    venv\Scripts\activate
 
 Linux / Mac
 
-source venv/bin/activate
+    source venv/bin/activate
+```
 
 4️⃣ Instalar dependências
+```bash
 pip install -r requirements.txt
+```
 
 5️⃣ Executar o projeto
+```bash
 python main.py
-📚 Aprendizados com o Projeto
+```
 
-Este projeto foi desenvolvido para praticar:
+## 📖 Como Usar
 
-Manipulação de dados com Pandas
+Ao executar `main.py`, o programa apresenta um **menu interativo** no terminal.
 
-Organização de projetos Python
+O usuário pode escolher entre as opções disponíveis para realizar diferentes análises dos dados das cidades, como:
 
-Criação de visualizações com Matplotlib
-
-Estruturação de código em módulos
-
-Uso de menus interativos no terminal
+- Visualizar resumo da tabela
+- Calcular densidade demográfica
+- Listar cidades mais densas
+- Gerar gráficos
